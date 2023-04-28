@@ -118,7 +118,7 @@ body{
   height: 100%;
 
 
-  font-size: 1.4rem;
+  
 
   padding: 10px;
 
@@ -201,7 +201,7 @@ body{
     <!-- Text area for Html Code  -->
 
 
-    <textarea id="htmlCode"  placeholder="Type HTML code here" spellcheck="false" oninput="update(0)" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"></textarea>
+    <textarea id="htmlCode"  placeholder="//Type HTML code here" spellcheck="true" oninput="update(0)" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}if(event.keyCode==8){update(1);}"></textarea>
 
     
 
@@ -237,7 +237,7 @@ body{
 
     var editor = ace.edit("htmlCode");
 
-    editor.setTheme("ace/theme/monokai");
+    editor.setTheme("ace/theme/cobalt");
 
     editor.session.setMode("ace/mode/html");
 
